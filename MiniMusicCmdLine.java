@@ -25,9 +25,9 @@ public class MiniMusicCmdLine {
 
             MidiEvent event = null;
 
-            ShortMessage first = new ShortMessage();
-            first.setMessage(192, 1, instrument, 0);
-            MidiEvent changeInstrument = new MidiEvent(first, 1);
+            ShortMessage instrumentToPlay = new ShortMessage();
+            instrumentToPlay.setMessage(192, 1, instrument, 0);
+            MidiEvent changeInstrument = new MidiEvent(instrumentToPlay, 1);
             track.add(changeInstrument);
 
             ShortMessage a = new ShortMessage();
